@@ -36,15 +36,27 @@ Solving this assignment will give you an idea about how real business problems a
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Strong Correlations (> 0.3)
-    Loan Amount (loan_amnt): Often shows a moderate to strong positive correlation with loan defaults. Larger loan amounts are associated with a higher likelihood of default.
-    Interest Rate (int_rate): Typically shows a moderate positive correlation with loan defaults. Higher interest rates are associated with higher default risk.
-    Debt-to-Income Ratio (dti): Generally shows a moderate positive correlation with loan defaults. Higher DTI ratios indicate higher default risk.
-    Loan Term (term): Commonly shows a moderate positive correlation with loan defaults. Longer loan terms (60 months) are associated with higher default rates.
-    Verification Status (verification_status): Should show a significant correlation, where verified income typically results in lower defaults. Verified income status reduces the     risk of default.
-- Weaker Correlations (< 0.3)
-    Annual Income (annual_inc): Often weaker correlation with loan defaults.
-    Employment Length (emp_length): Usually weaker correlation with loan defaults.
+- Loan Amount (loan_amnt):
+The scatter plots show that both "Fully Paid" and "Charged Off" loans are spread across all loan amounts. However, there is a higher density of "Fully Paid" loans at lower loan amounts. Higher loan amounts do not show a clear trend towards more defaults, but there is a slight increase in "Charged Off" loans at higher loan amounts.
+Weak negative correlation with loan status (-0.06). Loan amount has a weak association with loan status, indicating it is not a strong predictor of defaults.
+
+- Interest Rate (int_rate):
+There is a noticeable concentration of "Charged Off" loans at higher interest rates. The density plot shows a higher peak for "Charged Off" loans at higher interest rates compared to "Fully Paid" loans. Higher interest rates are associated with a higher likelihood of defaults.
+Moderate negative correlation with loan status (-0.10). Higher interest rates are somewhat associated with higher defaults.
+
+- Annual Income (annual_inc):
+"Charged Off" loans are more frequent in the lower annual income ranges, though "Fully Paid" loans are also present across all income levels. The density plot shows a higher peak for "Fully Paid" loans at higher incomes.
+Lower annual incomes are associated with a higher likelihood of defaults.
+Weak positive correlation with loan status (0.07). Higher incomes are slightly associated with lower defaults.
+
+- Debt-to-Income Ratio (dti): 
+There is a higher concentration of "Charged Off" loans at higher dti values. The density plot shows a higher peak for "Charged Off" loans at higher dti values compared to "Fully Paid" loans. Higher dti values are associated with a higher likelihood of defaults.
+Weak negative correlation with loan status (-0.04). Higher dti values have a slight association with higher defaults.
+
+- Employment Length (emp_length):
+Both "Fully Paid" and "Charged Off" loans are distributed across all employment lengths, with a slight increase in "Charged Off" loans at shorter employment lengths. Shorter employment lengths might be associated with a higher likelihood of defaults, though this is not a strong predictor.
+Very weak negative correlation with loan status (-0.01). Employment length has a very weak association with loan status.
+
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
